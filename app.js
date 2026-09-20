@@ -23,6 +23,7 @@ function renderClientes() {
   });
 }
 
+
 // Guardar cliente
 form.addEventListener("submit", (e) => {
   e.preventDefault();
