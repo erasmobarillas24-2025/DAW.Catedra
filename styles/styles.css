@@ -104,3 +104,33 @@ footer {
       "footer footer";
   }
 }
+/* agregando estilos personalizados */
+form {
+  margin-bottom: 20px;
+}
+input {
+  margin: 5px;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 12px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+td button {
+  margin: 0 5px;
+}
+

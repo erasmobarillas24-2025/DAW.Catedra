@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aesthetica - Sistema de Citas</title>
-    <!-- Enlace a los estilos dentro de la carpeta styles -->
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="UTF-8">
+  <title>Salón de Belleza</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app-container">
-        <!-- Encabezado con Flexbox -->
-        <header>
-            <nav class="navbar">
-                <h1>Aesthetica</h1>
-                <ul>
-                    <li><a href="#servicios" style="color:white;">Servicios</a></li>
-                    <li><a href="#citas" style="color:white;">Agendar Cita</a></li>
-                </ul>
-            </nav>
-        </header>
+  <h1>Gestión de Clientes</h1>
 
-        <!-- Contenido Principal con Grid y Flexbox -->
-        <main>
-            <section id="servicios">
-                <h2>Nuestros Servicios</h2>
-                <div class="services-grid">
-                    <div class="card">
-                        <h3>Manicura Spa</h3>
-                        <p>Cuidado completo para tus manos con exfoliación e hidratación.</p>
-                    </div>
-                    <div class="card">
-                        <h3>Diseño de Uñas</h3>
-                        <p>Personalización profesional en gel y acrílico.</p>
-                    </div>
-                </div>
-            </section>
-        </main>
+  <!-- Formulario -->
+  <form id="clienteForm">
+    <input type="text" id="nombre" placeholder="Nombre" required>
+    <input type="text" id="servicio" placeholder="Servicio" required>
+    <input type="number" id="telefono" placeholder="Teléfono" required>
+    <button type="submit">Guardar</button>
+  </form>
 
-        <!-- Pie de página -->
-        <footer>
-            <p>&copy; 2026 Aesthetica - Todos los derechos reservados.</p>
-        </footer>
-    </div>
+  <!-- Tabla de registros -->
+  <table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Servicio</th>
+        <th>Teléfono</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="listaClientes"></tbody>
+  </table>
+
+  <script src="app.js"></script>
 </body>
 </html>
